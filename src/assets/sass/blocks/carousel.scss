@@ -1,0 +1,29 @@
+.carousel {
+    width: 300px;
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    color: $grey_dark;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.42;
+    background-color: #fff;
+}
+
+.carousel__spot {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.carousel__address {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.carousel__date {
+    text-align: right;
+    opacity: .75;
+}

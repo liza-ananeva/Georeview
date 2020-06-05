@@ -1,0 +1,37 @@
+<div class="popup">
+    <div class="popup__header">
+        <div class="popup__address">\{{address}}</div>
+        <a href="#" id="close" class="popup__close"></a>
+    </div>
+    <div class="popup__outer">
+        <div class="popup__inner">
+            <div class="review">
+                <ul class="review__list">
+                    {% if !reviews %}
+                        <div class="review__empty">Отзывов пока нет...</div>
+                    {% else %}
+                        {% for review in reviews %}
+                            <li class="review__item">
+                                <div class="review__header">
+                                    <div class="review__author">\{{review.author}}</div>
+                                    <div class="review__spot">\{{review.spot}}</div>
+                                    <div class="review__date">\{{review.date}}</div>
+                                </div>
+                                <div class="review__text">\{{review.text}}</div>
+                            </li>
+                        {% endfor %}
+                    {% endif %}
+                </ul>
+            </div>
+            <div class="form">
+                <div class="form__title">Ваш отзыв</div>
+                <form action="" class="form__elem">
+                    <input type="text" id="add-author-input" class="form__input" placeholder="Ваше имя">
+                    <input type="text" id="add-spot-input" class="form__input" placeholder="Укажите место">
+                    <textarea id="add-text-input" class="form__input form__input--textarea" placeholder="Поделитесь впечатлениями"></textarea>
+                    <button type="submit" id="add-review-button" class="form__btn">Добавить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

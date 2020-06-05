@@ -1,0 +1,16 @@
+//colors
+$orange: #ff8663;
+$grey_dark: #4f4f4f;
+$grey: #9f9f9f;
+$grey_light: #c4c4c4;
+
+//setup
+@import "_misc/fonts.scss";
+@import "_misc/layout.scss";
+
+//blocks
+@import "blocks/map.scss";
+@import "blocks/popup.scss";
+@import "blocks/review.scss";
+@import "blocks/form.scss";
+@import "blocks/carousel.scss";
